@@ -1,0 +1,27 @@
+body {
+    background-color: antiquewhite;
+}
+
+
+form {
+    background-color: aqua;
+    margin: 50px;
+    width: 320px;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+label {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+textarea {
+    padding: 10px;
+    margin-left: 10px;
+}

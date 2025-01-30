@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listing</title>
+    <link rel="stylesheet" href="HomePage.css">
+</head>
+<body>
+    <header>
+        <h1>Conference Events</h1>
+        <section id="filters">
+            <select id="filter-category">
+                <option value="all">All Categories</option>
+                <option value="tech">Technology</option>
+                <option value="business">Business</option>
+            </select>
+            <select id="sort-by">
+                <option value="date">Sort by Date</option>
+                <option value="popularity">Sort by Popularity</option>
+            </select>
+        </section>
+    </header>
+
+    <section id="event-list">
+        <!-- Event cards dynamically populated here -->
+    </section>
+
+    <script src="event.js"></script>
+</body>
+</html>

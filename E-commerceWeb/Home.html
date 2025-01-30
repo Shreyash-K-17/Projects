@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Store</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+    <header>
+        <h1>Electronics Store</h1>
+        <nav class="navbar">
+            <a href="Home.html">Home</a>
+            <a href="cart.html" style="margin-left: 800px;">Cart</a>
+            <a href="login.html" style="margin-left: 15px;">Login/Register</a>
+        </nav>
+    </header>
+
+    <section id="filters">
+        <label>Sort by Price: <br>
+            <select id="sort">
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+            </select>
+        </label>
+    </section>
+
+    <br>
+
+    <section id="product-list">
+        <div class="product">
+            <img src="img/img1.jpeg" alt="Laptop A">
+            <h3>Laptop A</h3>
+            <p>$1000</p>
+            <a href="product.html?id=1">View Details</a>
+        </div>
+        <br><br><br>
+        <div class="product">
+        <img src="img/img4.png" alt="Phone B">
+            <h3>Phone B</h3>
+            <p>$500</p>
+            <a href="product.html?id=2">View Details</a>
+        </div>
+    </section>
+
+    <script src="js/products.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

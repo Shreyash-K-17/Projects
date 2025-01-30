@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+    <link rel="stylesheet" href="TaskDashboard.css">
+</head>
+
+<body>
+    <h1>To-Do List</h1>
+    <button onclick="logout()">Logout</button>
+    <form onsubmit="addTask(event)">
+        <input type="text" id="task-name" placeholder="Task Name" required>
+        <input type="date" id="due-date">
+        <button type="submit">Add Task</button>
+    </form>
+    <section id="filters">
+        <button onclick="filterTasks('all')">All</button>
+        <button onclick="filterTasks('completed')">Completed</button>
+        <button onclick="filterTasks('pending')">Pending</button>
+    </section>
+    <section id="task-list">
+        <!-- Task list dynamically populated -->
+    </section>
+    <script src="tasks.js"></script>
+</body>
+
+</html>

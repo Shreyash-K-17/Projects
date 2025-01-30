@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="js/overview.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Social Media Dashboard</h1>
+        <nav>
+            <a href="index.html">Overview</a>
+            <a href="scheduling.html">Scheduling</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="accounts.html">Accounts</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="metrics">
+            <div class="metric-card">
+                <h2>Total Followers</h2>
+                <p id="followers-count">0</p>
+            </div>
+            <div class="metric-card">
+                <h2>Engagement Rate</h2>
+                <p id="engagement-rate">0%</p>
+            </div>
+            <div class="metric-card">
+                <h2>Total Posts</h2>
+                <p id="total-posts">0</p>
+            </div>
+        </section>
+
+        <section id="charts">
+            <canvas id="follower-growth-chart"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Social Media Dashboard. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

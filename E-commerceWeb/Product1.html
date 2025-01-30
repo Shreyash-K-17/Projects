@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>My E-Commerce Store</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <button onclick="logout()">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product-details">
+            <div id="product-images">
+                <img id="main-image" src="img/img4.png" width="200px" alt="Product Image">
+                <div id="thumbnail-gallery">
+                    <img src="img/img1.jpeg" alt="Thumbnail" onclick="changeImage(this)">
+                    <img src="img/img2.jpeg" alt="Thumbnail" onclick="changeImage(this)">
+                    <img src="img/img3.jpeg" alt="Thumbnail" onclick="changeImage(this)">
+                </div>
+            </div>
+            <div id="product-info">
+                <h2 id="product-title">Product Name</h2>
+                <p id="product-description">
+                    This is a detailed description of the product, highlighting its features, benefits, and
+                    specifications.
+                </p>
+                <p id="product-price">$99.99</p>
+                <button onclick="getElementById()">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="product-reviews">
+            <h3>Customer Reviews</h3>
+            <div class="review">
+                <p><strong>John Doe</strong>: Great product! Highly recommend.</p>
+            </div>
+            <div class="review">
+                <p><strong>Jane Smith</strong>: The quality is amazing for the price.</p>
+            </div>
+            <!-- Add more reviews as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My E-Commerce Store. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="Cart.js">
+    // Change the main product image when a thumbnail is clicked
+    function changeImage(thumbnail) {
+        const mainImage = document.getElementById("main-image");
+        mainImage.src = thumbnail.src;
+    }
+
+    // Example function to add a product to the cart
+    function displayCart() {
+        alert("Product added to the cart!");
+        // Logic to add the product to the cart will go here
+    }
+</script>
+
+</html>

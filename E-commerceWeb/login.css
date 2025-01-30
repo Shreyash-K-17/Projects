@@ -1,0 +1,14 @@
+body {
+    background-color:antiquewhite;
+}
+
+form {
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 18rem;
+    background-color: burlywood;
+    object-fit: contain;
+    padding: 20px;
+
+}
+
