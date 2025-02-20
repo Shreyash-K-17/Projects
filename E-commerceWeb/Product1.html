@@ -1,23 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="Home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-    <header>
-        <h1>My E-Commerce Store</h1>
+
+
+    <section>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="cart.html">Cart</a>
-            <button onclick="logout()">Logout</button>
+
+
+            <ul id="sidebar">
+                <li onclick="hideSidebar()" id="closeSidebarBtn"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login/Register</a></li>
+            </ul>
+
+            <ul>
+                <li onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                <li><a href="Home.html"><img src="img/" alt="Zamazon"></a></li>
+            </ul>
+
+
         </nav>
-    </header>
+    </section>
 
     <main>
         <section id="product-details">
@@ -52,22 +70,98 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 My E-Commerce Store. All Rights Reserved.</p>
-    </footer>
-</body>
-<script src="Cart.js">
-    // Change the main product image when a thumbnail is clicked
-    function changeImage(thumbnail) {
-        const mainImage = document.getElementById("main-image");
-        mainImage.src = thumbnail.src;
-    }
 
-    // Example function to add a product to the cart
-    function displayCart() {
-        alert("Product added to the cart!");
-        // Logic to add the product to the cart will go here
-    }
-</script>
+
+    <section>
+        <footer class="container-fluid">
+            <div class="foot">
+                <div class="footer">
+                    <div class="main-footer">
+                        <div class="mfooter1">
+                            <b>COLLECTION</b>
+                            <br>
+                            <small><a href="#">PHILIPPE PATEK</a></small> <br>
+                            <small><a href="#">DESIRE</a></small> <br>
+                            <small><a href="#">EARNEST</a></small> <br>
+                            <small><a href="#">JAGUAR</a></small> <br>
+                            <small><a href="#">OMEGA</a></small> <br>
+                            <small><a href="#">TURBILLION</a></small> <br>
+                            <small><a href="#">ROLEX</a></small> <br>
+                        </div>
+                        <div class="mfooter2">
+                            <b>CUSTOMER SERVICE</b>
+                            <br>
+                            <small><a href="#">TRACK ORDERS</a></small> <br>
+                            <small><a href="#">PAYMENT OPTIONS</a></small> <br>
+                            <small><a href="#">ENCIRCLE OPTIONS</a></small> <br>
+                            <small><a href="#">TRACK WORLD WATCH STORES</a></small> <br>
+                        </div>
+                        <div class="mfooter3">
+                            <b>CONTACT US</b>
+                            <br>
+                            <small><a href="#">customercare@watch.co.in</a></small> <br>
+                            <small><a href="#">000-1234-555</a></small> <br>
+                            <small><a href="#">HELP & SERVICES</a></small> <br>
+                            <small><a href="#">FAQs</a></small> <br>
+                        </div>
+                        <div class="mfooter4">
+                            <b>ABOUT WATCH</b>
+                            <br>
+                            <small><a href="#">BRAND PROTECTION</a></small> <br>
+                            <small><a href="#">BLOGS</a></small> <br>
+                            <small><a href="#">CAREER</a></small> <br>
+                            <small><a href="#">CORPORATE</a></small> <br>
+                        </div>
+                    </div>
+
+                    <div id="lower-footer">
+                        <span><b>Download Watch World App</b></span>
+                        <br><br>
+                        <a href="https://www.apple.com/in/app-store/" target="_blank" rel="noopener noreferrer"><img
+                                src="img/appstore.png" alt="appstore" width="125px"></a>
+                        <a href="https://play.google.com/store/games?hl=en" target="_blank"
+                            rel="noopener noreferrer"><img src="img/playstore.png" alt="playstore" width="140px"></a>
+
+                        <br><br>
+                        <span><b>Follow Us With</b></span>
+                        <br>
+                        <span>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </span>
+
+                        <br>
+                        <span>
+                            <h6>Want Help? <u>CLICK HERE</u> to<br> Contact us on <i class="fa-brands fa-whatsapp"></i>
+                            </h6>
+                        </span>
+
+                        <br>
+                        <span>
+                            <h6>Operating Hours: 10AM to 10PM <br>Monday to Sunday</h6>
+                        </span>
+                    </div>
+                </div>
+
+                <hr>
+                <div id="lowest-footer">
+                    <small class="lowestfoottxt1">© 2024 Watch Company Limited. All
+                        Rights Reserved</small>
+                    <br>
+                    <small>Terms & Conditions | Privacy Policy | Wearable Privacy
+                        Policy</small>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
