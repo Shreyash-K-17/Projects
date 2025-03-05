@@ -9,6 +9,44 @@
 </head>
 
 <body>
+
+
+
+
+
+    <section>
+        <nav>
+
+
+            <ul id="sidebar">
+                <li onclick="hideSidebar()" id="closeSidebarBtn"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login/Register</a></li>
+            </ul>
+
+            <ul>
+                <li onclick="showSidebar()"><a href="#" id="openSidebarBtn"><i class="fa-solid fa-bars"></i></a></li>
+                <li><a href="Home.html"><b class="logo">BUGATTI</b></a></li>
+            </ul>
+
+
+        </nav>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
     <h1>To-Do List</h1>
     <button onclick="logout()">Logout</button>
     <form onsubmit="addTask(event)">
@@ -24,6 +62,129 @@
     <section id="task-list">
         <!-- Task list dynamically populated -->
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    <br><br><br><br>
+
+
+
+    <!-- -----------------------------------------------------------------------------FOOTER------------------------------------------------------------------------------- -->
+    
+    
+    <section>
+        <footer class="container-fluid">
+            <div class="foot">
+                <div class="footimg">
+                    <img src="img/Bugatti-logo_footer.jpg" alt="bugatti" width="200px">
+                </div>
+    
+                <div class="footer">
+                    <div class="main-footer">
+    
+    
+                        <div class="mfooter1">
+                            <b>COLLECTION</b>
+                            <br>
+                            <small><a href="#">CHIRON</a></small> <br>
+                            <small><a href="#">DIVO</a></small> <br>
+                            <small><a href="#">CHIRON SUPERSPORT</a></small> <br>
+                            <small><a href="#">CHIRON PUR SPORT</a></small> <br>
+                            <small><a href="#">VEYRON</a></small> <br>
+                            <small><a href="#">TURBILLION</a></small> <br>
+                            <small><a href="#">LA VOITURE NOIRE</a></small> <br>
+                            <small><a href="#">CENTODIECI</a></small> <br>
+                        </div>
+                        <div class="mfooter2">
+                            <b>CUSTOMER SERVICE</b>
+                            <br>
+                            <small><a href="#">SERVICE & CONTACT</a></small> <br>
+                            <small><a href="#">MAINTANENCE</a></small> <br>
+                            <small><a href="#">WARRENTY</a></small> <br>
+                            <small><a href="#">BUGATTI ACCESSORIES</a></small> <br>
+                        </div>
+                        <div class="mfooter3">
+                            <b>CONTACT US</b>
+                            <br>
+                            <small><a href="#">customercare@Bugatti.co.in</a></small> <br>
+                            <small><a href="#">000-1234-555</a></small> <br>
+                            <small><a href="#">HELP & SERVICES</a></small> <br>
+                            <small><a href="#">FAQs</a></small> <br>
+                        </div>
+                        <div class="mfooter4">
+                            <b>LIESTYLE</b>
+                            <br>
+                            <small><a href="#">COLLECTIBLES & MODEL CARS</a></small> <br>
+                            <small><a href="#">WATCH & JEWELERY</a></small> <br>
+                            <small><a href="#">ART OF LIVING</a></small> <br>
+                            <small><a href="#">STORES</a></small> <br>
+                        </div>
+                    </div>
+    
+                    <div id="lower-footer">
+                        <!-- <span><b>Download Watch World App</b></span>
+                        <br><br>
+                        <a href="https://www.apple.com/in/app-store/" target="_blank" rel="noopener noreferrer"><img
+                                src="img/appstore.png" alt="appstore" width="125px"></a>
+                        <a href="https://play.google.com/store/games?hl=en" target="_blank"
+                            rel="noopener noreferrer"><img src="img/playstore.png" alt="playstore" width="140px"></a> -->
+    
+                        <br><br>
+                        <span><b>Follow Us With</b></span>
+                        <br>
+                        <span>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </span>
+    
+                        <br>
+                        <span>
+                            <h6>Want Help? <u>CLICK HERE</u> to<br> Contact us on <i class="fa-brands fa-whatsapp"></i>
+                            </h6>
+                        </span>
+    
+                        <br>
+                        <span>
+                            <h6>Operating Hours: 10AM to 10PM <br>Monday to Sunday</h6>
+                        </span>
+                    </div>
+                </div>
+    
+                <hr>
+                <div id="lowest-footer">
+                    <small class="lowestfoottxt1">© 2024 Bugatti Company Limited. All Rights Reserved</small>
+                    <br>
+                    <small>Terms & Conditions | Privacy Policy | Wearable Privacy Policy</small>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+    
+    
+    
+    
+
+
+
+
+
+
     <script src="tasks.js"></script>
 </body>
 

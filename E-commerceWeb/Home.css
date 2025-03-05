@@ -19,6 +19,10 @@ nav {
     background-color: black;
     color: aqua;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    /* position: absolute; */
+    /* top: 0px; */
+    /* z-index: 1; */
 }
 
 nav ul {
@@ -29,10 +33,12 @@ nav ul {
     justify-content: flex-start;
     align-items: center;
 }
+
 nav li {
     height: 80px;
     align-items: center;
 }
+
 nav a {
     height: 100%;
     padding: 0 30px;
@@ -75,9 +81,11 @@ nav li:-first-child {
     transition: all 1.5s ease;
 
 }
+
 #sidebar li {
     width: 100%;
 }
+
 #sidebar a {
     width: 100%;
     color: black;
@@ -86,6 +94,7 @@ nav li:-first-child {
         color: blue;
     }
 }
+
 #closeSidebarBtn {
     top: 0;
     width: 30px;
@@ -122,7 +131,9 @@ nav li:-first-child {
 }
 
 .carousel {
-    width: 100vw; /* Full width of the viewport */
+    width: 100vw;
+    position: relative;
+    /* Full width of the viewport */
 }
 
 .carousel-item {
@@ -133,6 +144,7 @@ nav li:-first-child {
     object-position: center;
     display: block;
 }
+
 /* 
 .carousel-img {
     height: 290px;
@@ -147,16 +159,105 @@ nav li:-first-child {
 
 
 
+/* ----------------------------------------------------------------------CARD--------------------------------------------------------------------- */
 
+/* .card {
+    width: 12rem;
+}
 
+.card::before {
+    height: 70px;
+    background-color: black;
+
+}
 
 .cardimg {
     object-fit: contain;
+} */
+
+.card-main-body {
+    display: grid;
+    margin: 10px;
+}
+
+/* .card1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+.card2 {
+    grid-row: 2;
+    grid-column: 2;
+}
+.card3 {
+    grid-row: 3;
+    grid-column: 1;
+
+} */
+
+.card {
+    position: relative;
+    width: 700px;
+    /* Adjust card width as needed */
+    overflow: hidden;
+    border: 10px solid transparent;
+    border-radius: 10%;
+    margin: 100px;
+    column-gap: 10px;
+}
+
+.card img {
+    object-fit: contain;
+    height: 100%;
+
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent overlay */
+    /* Start the overlay hidden above the card */
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.card:hover .card-overlay {
+    transform: translateY(0);
+    /* Slide down into view */
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #e65c00;
 }
 
 
-
-
+.product1Img {
+    margin: 100px;
+}
 
 
 
@@ -176,6 +277,7 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .foot {
     color: white;
     background-color: black;
