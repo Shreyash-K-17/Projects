@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+#bodybgimg {
     min-height: 100vh;
     background-color: antiquewhite;
     background-image: url(img/Bugatti_bgimg.jpg);
@@ -14,15 +14,43 @@ body {
     background-attachment: fixed;
 }
 
+#loginpagebodybgimg {
+    min-height: 100vh;
+    background-color: antiquewhite;
+    background-image: url(img/Bugatti_Carausalimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#ProductPagebgimg {
+    min-height: 100vh;
+    background-color: antiquewhite;
+    background-image: url(img/Bugatti_Carausalimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+section {
+    padding: 0;
+    margin: 0;
+}
+
 
 nav {
     background-color: black;
     color: aqua;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    position: sticky;
+    margin: 0;
+    padding: 0;
+    /* position: sticky; */
     /* position: absolute; */
     /* top: 0px; */
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 nav ul {
@@ -43,14 +71,14 @@ nav a {
     height: 100%;
     padding: 0 30px;
     padding-top: 20px;
-    margin: 0;
+    /* margin: 0; */
     text-decoration: none;
     display: flex;
     align-items: center;
     color: aqua;
 
     &:hover {
-        background-color: aquamarine;
+        background-color: aqua;
         color: black;
 
         &::after#closeSidebarBtn {
@@ -59,8 +87,8 @@ nav a {
     }
 }
 
-nav li:-first-child {
-    margin-left: auto;
+nav li:first-child {
+    margin-right: auto;
 }
 
 #sidebar {
@@ -69,7 +97,7 @@ nav li:-first-child {
     left: 0;
     height: 100vh;
     width: 280px;
-    z-index: 1000;
+    z-index: 1;
     background-color: rgba(225, 225, 225, 0.2);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0px 10px rgb(0, 0, 0, 0.1);
@@ -78,8 +106,6 @@ nav li:-first-child {
     align-items: flex-start;
     justify-content: flex-start;
     margin-left: -50px;
-    transition: all 1.5s ease;
-
 }
 
 #sidebar li {
@@ -91,15 +117,15 @@ nav li:-first-child {
     color: black;
 
     &:hover {
-        color: blue;
+        color: black;
     }
 }
 
-#closeSidebarBtn {
+/* #closeSidebarBtn {
     top: 0;
     width: 30px;
     height: 40px;
-}
+} */
 
 /* #openSidebarBtn {
     width: 100px;
@@ -125,14 +151,17 @@ nav li:-first-child {
 
 .carousel-img {
     width: 100%;
-    justify-content: bottom;
+    justify-content: center;
 
     /* z-index: 10; */
 }
 
 .carousel {
+    top: -5%;
     width: 100vw;
     position: relative;
+    z-index: -1;
+
     /* Full width of the viewport */
 }
 
@@ -178,6 +207,7 @@ nav li:-first-child {
 .card-main-body {
     display: grid;
     margin: 10px;
+    align-items: center;
 }
 
 /* .card1 {
@@ -236,7 +266,6 @@ nav li:-first-child {
 
 .card:hover .card-overlay {
     transform: translateY(0);
-    /* Slide down into view */
 }
 
 .add-to-cart {
@@ -262,8 +291,18 @@ nav li:-first-child {
 
 
 
+/* -------------------------------------------------------------loginpage------------------------------------------------------------------- */
 
+#loginpageform {
+    width: 500px;
+    background-color: antiquewhite;
+    align-items: center;
+    margin-left: 400px;
+    margin-bottom: 400px;
+    margin-top: 400px;
+    padding: 10px;
 
+}
 
 
 /* ------------------------------------------------------------------------------FOOTER---------------------------------------------------------------------- */

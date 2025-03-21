@@ -6,8 +6,8 @@
 
 body {
     min-height: 100vh;
-    background-color: antiquewhite;
-    background-image: url(img/Portfolio_bgimg.jpeg);
+    background-color: black;
+    background-image:url(img/itachibgimg.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,11 +15,18 @@ body {
 }
 
 
+section {
+    margin: 0;
+    padding: 0;
+}
+
+
 nav {
     background-color: black;
     color: aqua;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    position: sticky;
+    margin: 0;
+    padding: 0;
     z-index: 1;
 }
 
@@ -41,14 +48,15 @@ nav a {
     height: 100%;
     padding: 0 30px;
     padding-top: 20px;
-    margin: 0;
+    text-decoration: none;
+    display: flex;
     text-decoration: none;
     display: flex;
     align-items: center;
     color: aqua;
 
     &:hover {
-        background-color: aquamarine;
+        background-color: aqua;
         color: black;
 
         &::after#closeSidebarBtn {
@@ -66,17 +74,16 @@ nav li:first-child {
     top: 0;
     left: 0;
     height: 100vh;
-    max-width: 280px;
+    width: 280px;
     z-index: 1;
     background-color: rgba(225, 225, 225, 0.2);
     backdrop-filter: blur(10px);
-    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     margin-left: -50px;
-    transition: all ease 1.5ms;
 }
 
 #sidebar li {
@@ -93,73 +100,55 @@ nav li:first-child {
 }
 
 #closeSidebarBtn {
-    top: 0;
-    width: 20px;
-    height: 40px;
-}
-
-#navbar {
-    background-color: blanchedalmond;
-}
-
-.port-side-bar {
-    position: fixed;
-    height: 100%;
-    width: 230px;
-    background-color: #fff;
-    position: fixed !important;
-    z-index: 1;
-    overflow: auto;
-}
-
-.left-menu-inner {
-    padding-top: 87px;
-    position: fixed;
-    top: 0;
-    padding-bottom: 0;
-    height: 100%;
-    width: 250px;
-    background-color: transparent;
-}
-
-
-ul {
-    display: flex;
-    gap: 50px;
-    justify-content: left;
-}
-
-ul li {
-    text-decoration: none;
-    list-style-type: none;
-}
-
-h3 {
-    margin-top: 900px;
-}
-
-img {
-    max-width: 500px;
+    color: aqua;
 }
 
 
 
 
 
-/* ------------------------------------------------------------------------------FOOTER---------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------------- */
 
 
 footer {
     background-color: black;
     justify-content: space-between;
     flex-wrap: wrap;
-    bottom: 0%;
-}
-
-.foot {
     color: white;
-    background-color: black;
 }
+/* 
+.foot {
+    
+} */
 
 .footer {
     display: flex;
@@ -173,8 +162,11 @@ a:any-link {
 }
 
 .footimg {
+    margin-left: 370px;
     display: block;
-    line-height: 30px;
+    line-height: 50px;
+    padding-top: 50px;
+    align-items: center;
 }
 
 
@@ -185,3 +177,28 @@ a:any-link {
     margin-top: 50px;
 }
 
+.mfooter1 {
+    padding-left: 190px;
+    line-height: 30px;
+}
+
+.mfooter2 {
+    padding-left: 80px;
+    line-height: 30px;
+}
+
+.mfooter3 {
+    padding-left: 70px;
+    line-height: 30px;
+}
+
+.mfooter4 {
+    padding-left: 40px;
+    line-height: 30px;
+}
+
+#lower-footer {
+    margin-top: 5px;
+    margin-left: 60px;
+    line-height: 30px;
+}
