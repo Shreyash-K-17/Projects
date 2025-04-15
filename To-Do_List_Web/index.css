@@ -11,7 +11,7 @@ section {
 
 body {
     min-width: 100vh;
-    background-image: url(img/zarakibgimg.jpg);
+    background-image: url(img/bgimg.jpg);
     background-size: cover;
     background-position: fixed;
     background-repeat: no-repeat;
@@ -100,6 +100,21 @@ nav li:first-child {
 #sidebar li {
     width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

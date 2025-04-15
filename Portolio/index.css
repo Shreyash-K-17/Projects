@@ -47,7 +47,7 @@ li {
 nav {
     background-color: black;
     color: aqua;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); */
     margin: 0;
     padding: 0;
     z-index: 1;
@@ -72,7 +72,7 @@ nav a {
     height: 100%;
     padding: 0 30px;
     padding-top: 20px;
-    /* margin: 0; */
+    margin: 0;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -101,7 +101,7 @@ nav li:first-child {
     z-index: 1;
     background-color: rgba(225, 225, 225, 0.2);
     backdrop-filter: blur(10px);
-    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 10px 0px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -143,6 +143,21 @@ nav li:first-child {
 .introimg {
     color: black;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.introresume {
+    padding: 20px;
+    margin: auto;
+    background-color: lightgrey;
+    color: black;
+    border-radius: 10px;
+    border: none;
+
+    &:hover {
+        background-color: aqua;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+    }
 }
 
 
@@ -275,7 +290,7 @@ footer {
     padding: 20px 0px;
     flex-wrap: wrap;
     bottom: 0;
-    /* position: relative; */
+    /* position: fixed; */
 }
 
 .footer-container {
