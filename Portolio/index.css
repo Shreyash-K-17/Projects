@@ -102,7 +102,7 @@ nav li:first-child {
     background-color: rgba(225, 225, 225, 0.2);
     backdrop-filter: blur(10px);
     box-shadow: 5px 10px 0px rgba(0, 0, 0, 0.1);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -133,7 +133,9 @@ nav li:first-child {
 
 
 
-
+.introduction {
+    margin-left: 100px;
+}
 
 .introtext {
     color: black;
@@ -154,8 +156,9 @@ nav li:first-child {
     border: none;
 
     &:hover {
+        transition: background-color 0.5s ease, box-shadow 1.5s ease;
         background-color: aqua;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 
     }
 }
@@ -208,7 +211,7 @@ nav li:first-child {
 
 
 .photographs {
-    margin-left: 400px;
+    margin-left: 100px;
 }
 .photoinner {
     width: 100%;
@@ -217,13 +220,10 @@ nav li:first-child {
 
 }
 .projinfo {
-    margin-left: 450px;
+    margin-left: 150px;
     color: black;
 }
 
-.introduction {
-    margin-left: 400px;
-}
 
 
 
@@ -231,7 +231,7 @@ nav li:first-child {
 
 
 
-
+/* -----------------------------------------------------------------skill page------------------------------------------------------------------------------- */
 
 
 .skillinfo {
@@ -290,7 +290,7 @@ footer {
     padding: 20px 0px;
     flex-wrap: wrap;
     bottom: 0;
-    /* position: fixed; */
+    position: relative;
 }
 
 .footer-container {
