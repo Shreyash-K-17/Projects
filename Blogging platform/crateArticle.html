@@ -4,10 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Create Article</title>
   <link rel="stylesheet" href="blog.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -22,22 +23,158 @@
     <nav>
 
 
-      <ul id="sidebar">
-        <li onclick="hideSidebar()" id="closeSidebarBtn"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ProjectPage.html" aria-current="page">Project</a></li>
-        <li><a href="SkillPage.html">Skills</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Login/Register</a></li>
+      <ul id="sidebar" class="navul">
+        <li class="navli" onclick="hideSidebar()" id="closeSidebarBtn"><a href="#" class="nava"><i
+              class="fa-solid fa-xmark"></i></a></li>
+        <li class="navli"><a href="index.html" class="nava">Home</a></li>
+        <li class="navli"><a href="ProjectPage.html" class="nava">Project</a></li>
+        <li class="navli"><a href="SkillPage.html" class="nava">Skills</a></li>
+        <li class="navli"><a href="#" class="nava">Contact</a></li>
+        <li class="navli"><a href="#" class="nava">Login/Register</a></li>
       </ul>
 
-      <ul>
-        <li onclick="showSidebar()"><a href="#" id="openSidebarBtn"><i class="fa-solid fa-bars"></i></a></li>
-        <li><a href="Home.html"><b class="logo">Portfolio</b></a></li>
+      <ul class="navul">
+        <li onclick="showSidebar()"><a href="#" id="openSidebarBtn" class="nava"><i class="fa-solid fa-bars"></i></a>
+        </li>
+        <li><a href="index.html" class="nav1txt" class="nava"><i class="fa-solid fa-blog"></i> Blogger</a></li>
+
+        <!-- <li><a href="Home.html"><b class="logo">Portfolio</b></a></li> -->
       </ul>
 
 
     </nav>
+  </section>
+
+
+  <!-- <section>
+    <nav>
+
+      <ul class="nav1">
+        <li><a href="index.html" class="nav1txt"><i class="fa-solid fa-blog"></i> Blogger</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="login-register.html" class="nav2txt">Sign in</a></li>
+      </ul>
+
+    </nav>
+  </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br><br><br><br>
+
+
+
+  <!-- -----------------------------------------------------------------------------FOOTER------------------------------------------------------------------------------- -->
+
+
+  <section>
+    <footer class="container-fluid">
+      <div class="foot">
+
+        <div class="main-footer">
+
+          <div class="mfooter1">
+            <b>HELP</b>
+            <br>
+            <small>Help Center</small> <br>
+            <small>Help Forum</small> <br>
+            <small>Video Tutorial</small>
+          </div>
+          <div class="mfooter2">
+            <b>COMMUNITY</b>
+            <br>
+            <small>Blogging Buzz</small> <br>
+          </div>
+          <div class="mfooter3">
+            <b>DEVELOPER</b>
+            <br>
+            <small>Writter API</small> <br>
+            <small>Forum</small> <br>
+          </div>
+        </div>
+
+        <hr>
+        <div id="lowest-footer">
+          <div class="lowestfooter-txt">
+            <small class="lowestfoottxt1">© 2024 Blog Company Limited. All Rights Reserved.</small>
+            <br><br>
+            <small>Terms & Conditions | Privacy Policy | Wearable Privacy Policy</small>
+          </div>
+          <div class="dropdown">
+            <select name="language" id="language">
+              <option value="volvo">Engliss</option>
+              <option value="saab">Hindi</option>
+              <option value="mercedes">Ispaniss</option>
+              <option value="audi">Marathi</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
   </section>
 
 
@@ -62,27 +199,16 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('#sidebar');
+      sidebar.style.display = 'flex';
+    }
+    function hideSidebar() {
+      const sidebar = document.querySelector('#sidebar');
+      sidebar.style.display = 'none';
+    }
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
