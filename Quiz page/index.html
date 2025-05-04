@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Quiz Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -14,42 +14,612 @@
 <body>
 
 
-    <!-- ----------------------------------------------------------------------------------------NAV & SIDEBAR-------------------------------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------------HEADER - NAV & SIDEBAR-------------------------------------------------------------------------------------------- -->
 
     <section>
+
+        <header>
+            <div class="main-header">
+                <ul>
+                    <li id="openSidebarBtnLi" onclick="showSidebar()"><a href="#" id="openSidebarBtn"><i
+                                class="fa-solid fa-bars"></i></a>
+                    </li>
+                    <li><img src="img/quizlogo.webp" alt="no img" class="headerLogoImg"></li>
+                    <li>
+                        <search>
+                            <form>
+                                <input name="fsrch" id="fsrch" placeholder="Search"><i
+                                    class="text-dark fa-solid fa-magnifying-glass"></i>
+                            </form>
+                        </search>
+                    </li>
+                    <li><button><a href="#">Subscribe</a></button></li>
+                    <li class="header-signin"><a href="#">Sign In</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <nav>
+            <div class="lower-navbar">
+                <ul>
+                    <li><a href="#">Games & Quizzes</a></li>
+                    <li><a href="#">History & Society</a></li>
+                    <li><a href="#">Science & Tech</a></li>
+                    <li><a href="#">Biographies</a></li>
+                    <li><a href="#">Animals & Natures</a></li>
+                    <li><a href="#">Geography & Travels</a></li>
+                    <li><a href="#">Art & Culture</a></li>
+                    <li><a href="#">ProCon</a></li>
+                    <li><a href="#">Money</a></li>
+                    <li><a href="#">Videos</a></li>
+                </ul>
+            </div>
+        </nav>
+
         <nav>
 
 
-            <ul id="sidebar">
-                <li onclick="hideSidebar()" id="closeSidebarBtn"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="#">Take Quiz</a></li>
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Cart</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Login/Register</a></li>
+            <ul id="sidebar" class="navul">
+                <!-- <li class="navli" onclick="hideSidebar()" id="closeSidebarBtn"><a href="#" class="nava"><i class="fa-solid fa-xmark"></i></a></li> -->
+                <li class="navli"><a href="#" class="nava"><i class="fa-solid fa-envelopes-bulk"></i>Posts</a></li>
+                <li class="navli"><a href="#" class="nava"><i class="fa-solid fa-chart-simple"></i>Stats</a></li>
+                <li class="navli"><a href="#" class="nava"><i class="fa-solid fa-comments"></i>Comments</a></li>
+                <li class="navli"><a href="#" class="nava"><i class="fa-solid fa-dollar-sign"></i>Earnings</a></li>
+                <li class="navli"><a href="#" class="nava"><i class="fa-solid fa-book"></i>Pages</a></li>
+                <li class="navli"><a href="#" class="nava"><i class="fa-solid fa-layer-group"></i>Layout</a></li>
             </ul>
 
-            <ul>
-                <li onclick="showSidebar()"><a href="#" id="openSidebarBtn"><i class="fa-solid fa-bars"></i></a></li>
-                <li><a href="Home.html"><b class="logo">PLAY</b></a></li>
-            </ul>
+            <!-- <ul class="navul upper-navul">
+              <li onclick="showSidebar()"><a href="#" id="openSidebarBtn" class="nava"><i class="fa-solid fa-bars"></i></a>
+              </li>
+              <li><a href="index.html" class="nav1txt" class="nava"><i class="fa-solid fa-blog"></i> Blogger</a></li>
+      
+            </ul> -->
 
 
         </nav>
     </section>
 
 
-    <!-- -----------------------------------------------------------------------------BODY---------------------------------------------------------------- -->
+    <!-- -----------------------------------------------------------------------------MAIN---------------------------------------------------------------------------------------- -->
 
 
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">Guess the Country</h5>
-            <p class="card-text">guess .</p>
-            <a href="#" class="btn btn-primary">Take Quiz</a>
-        </div>
-    </div>
+
+
+
+
+
+    <section>
+        <main>
+
+            <div class="maincontent-home">
+                <div class="maincontent-row1">
+                    <h3><b>Featured Games</b></h3> <br>
+
+                    <ul>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/mainContentRow1img1.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="">Quordle</a></h5>
+                                    <p class="card-text">Can you solve 4 word at once?</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/mainContentRow1img2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tightrope</h5>
+                                    <p class="card-text">A Daily Trivia Game.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/mainContentRow1img3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blossom</h5>
+                                    <p class="card-text">Pick the best word.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/mainContentRow1img4.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Octordle</h5>
+                                    <p class="card-text">The party starts at 8.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/mainContentRow1img5.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pilfer</h5>
+                                    <p class="card-text">A Delightful ruthless word game.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/mainContentRow1img6.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">The missing Letter</h5>
+                                    <p class="card-text">A Daily crossword with a twist.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/mainContentRow1img7.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Twofer goofer</h5>
+                                    <p class="card-text">Think you know it, Poet?.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/mainContentRow1img8.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Victordle</h5>
+                                    <p class="card-text">Play head-to-head.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="maincontent-row2">
+                    <h3><b>Editors' Picks</b></h3> <br>
+
+                    <ul>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/10/241810-131-AA788248/Spain-locator-map.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guess the Country.</h5>
+                                    <p class="card-text">Test your Global positioning skills.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/58/203458-131-D94E9327/periodic-table-concept.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Facts You Should Know: The Periodic Table Quiz</h5>
+                                    <p class="card-text">This quiz is a gas…and a liquid and a solid.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/22/99622-131-65926F1A/Parthenon-Athens.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">From Athena to Zeus: Basics of Greek Mythology</h5>
+                                    <p class="card-text">Do you know which hero took a dip in the River Styx? Or what...
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/90/237690-131-60E05817/anatomy-Sternum.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guess the Bones and Muscles Quiz</h5>
+                                    <p class="card-text">Bone up on your knowledge of the human body..</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/46/237446-131-FB3E4813/A-closeup-of-a-shuttlecock.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guess the Sport! Quiz</h5>
+                                    <p class="card-text">Pick the right sport for the given gear..</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/33/1733-131-C0C3C1CF/FLAG-Ireland.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Irish Quiz</h5>
+                                    <p class="card-text">Try your luck with these questions, spanning from Jonathan
+                                        Swift...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/72/237072-131-85D9F101/Name-that-Thing-Around-the-House-composite-image.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Name That Thing: Around the House Quiz</h5>
+                                    <p class="card-text">How well do you know the items under your own roof?</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/61/189361-131-C9E80A5C/Cinderella-Castle-Magic-Kingdom-Disney-World-Orlando-Florida.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Disney Quiz</h5>
+                                    <p class="card-text"> Not your average Mickey Mouse quiz.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="maincontent-row2">
+                    <h3><b>Editors' Picks</b></h3> <br>
+
+                    <ul>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/68/240168-131-DE32AA37/chicken-and-egg.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Which Came First? Vocabulary Quiz.</h5>
+                                    <p class="card-text">Jeggings or mom jeans? Given a pair of words,...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/22/64622-131-84551B22/indiana-united-states-locator-united-states.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Name That U.S. State Quiz.</h5>
+                                    <p class="card-text">This quiz is all over the map..</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/92/239592-131-7643CEF2/chihuahua-dog.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">What Did You Just Call Me? Vocabulary Quiz</h5>
+                                    <p class="card-text">See if you can tell the insults from the compliments.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/48/228448-131-2A77AABD/A-student-looking-quizzical.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Famous Novels, First Lines Quiz</h5>
+                                    <p class="card-text">Can you identify these novels by their famous first lines?</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/14/240414-131-1042720D/Casablanca-film.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Best Picture Movie Quote Quiz</h5>
+                                    <p class="card-text">Take this quiz or you may regret it. Maybe not today, maybe
+                                        not...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/44/168044-131-40C0D047/pigeon-member-Columbiformes-family-Columbidae.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ultimate Bird Trivia Quiz</h5>
+                                    <p class="card-text">See if you will soar with the eagles or go the way of the dodo.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/48/149348-131-47FD2AE9/American-Valentine-card-1910.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Love Quiz</h5>
+                                    <p class="card-text">Romance and physical attraction in history, literature, and
+                                        science…what’s...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/49/238249-131-95ABD61F/composite-name-that-color.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Name That Color!</h5>
+                                    <p class="card-text"> Can you tell chartreuse from vermilion?</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="maincontent-row2">
+                    <h3><b>Popular</b></h3> <br>
+
+                    <ul>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/78/6078-131-004E1EE7/Flag-Australia.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Name That World Flag!.</h5>
+                                    <p class="card-text">Our salute to flags from around the world. Can you name the
+                                        countries...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/10/241810-131-AA788248/Spain-locator-map.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guess the Countries of the World Quiz.</h5>
+                                    <p class="card-text">Test your global positioning skills.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/90/217490-131-CEE12385/Texas-state-capitol-building-Austin-Texas.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">U.S. State Capitals Quiz</h5>
+                                    <p class="card-text">From Albany to Trenton, can you name them all?</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/05/124605-131-977A8DEB/Cathedral-Plaza-de-Armas-Lima-Peru.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">World Capitals Quiz</h5>
+                                    <p class="card-text">Can you identify the world’s national capitals? In this quiz...
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/61/93061-131-ABCDE075/Statue-of-Liberty-Island-New-York-Bay.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Can You Answer These Questions from the United States
+                                        Citizenship Test?</h5>
+                                    <p class="card-text">What is a Constitutional amendment? Who wrote the
+                                        Declaration...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/05/5705-131-27D33D77/subshells-elements-Periodic-table-column-Z-atomic.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Periodic Table of the Elements</h5>
+                                    <p class="card-text">Test your bond with the periodic table of elements in this
+                                        quiz...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/31/94531-131-A6E89842/Brandenburg-Gate-Berlin.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">European Capitals Quiz</h5>
+                                    <p class="card-text">From the Atlantic to the Urals, backpack your way across the...
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdn.britannica.com/28/201028-131-A812572C/American-infantry-Varennes-France1918-World-War-I.jpg?w=400&h=225&c=crop"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">World War I Quiz</h5>
+                                    <p class="card-text"> Involving all the world’s superpowers, World War I resulted
+                                        in...</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <br>
+
+
+                <div class="mainContent-sideCategroy">
+                    
+                    <span>
+                        <h3><b>Featured Categories</b></h3>
+                        <!-- <search>
+                            <form>
+                                <input name="fsrch" id="fsrch" placeholder="Search"><i class="text-dark fa-solid fa-magnifying-glass"></i>
+                            </form>
+                        </search> -->
+                    </span>
+
+                    <div class="sideCategory-container">
+
+                        <span class="scienceCategory-row1">
+                            <h3><b>Science</b></h3>
+                            <ul>
+                                <li>
+                                    <div class="card mb-3" style="max-width: 440px;">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://cdn.britannica.com/47/235447-131-6541E03A/Close-up-of-the-eye-of-a-horned-owl-bubo.jpg?w=100&h=75&c=crop" class="scienceCategory-row1-img img-fluid rounded-start" alt="no img">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Guess the Animal Eyes Quiz</h6>
+                                                    <p class="card-text">Can you tell these creatures just by looking at their peepers?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card mb-3" style="max-width: 540px;">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://cdn.britannica.com/77/191677-131-37230EA8/Capybara.jpg?w=100&h=75&c=crop" class="img-fluid rounded-start" alt="no img">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Name That Animal!</h5>
+                                                    <p class="card-text">Can you tell a tapir from an aardvark?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card mb-3" style="max-width: 540px;">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://cdn.britannica.com/68/237068-131-8D3EB18E/Name-that-Thing-Nature-composite-image.jpg?w=100&h=75&c=crop" class="img-fluid rounded-start" alt="no img">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Name That Thing: Nature</h5>
+                                                    <p class="card-text">Get acquainted with the great outdoors</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </span>
+
+                        <span class="scienceCategory-row1">
+                            <h3><b>Science</b></h3>
+                            <ul>
+                                <li>
+                                    <div class="card mb-3" style="max-width: 440px;">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://cdn.britannica.com/47/235447-131-6541E03A/Close-up-of-the-eye-of-a-horned-owl-bubo.jpg?w=100&h=75&c=crop" class="scienceCategory-row1-img img-fluid rounded-start" alt="no img">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Guess the Animal Eyes Quiz</h6>
+                                                    <p class="card-text">Can you tell these creatures just by looking at their peepers?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card mb-3" style="max-width: 540px;">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://cdn.britannica.com/77/191677-131-37230EA8/Capybara.jpg?w=100&h=75&c=crop" class="img-fluid rounded-start" alt="no img">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Name That Animal!</h5>
+                                                    <p class="card-text">Can you tell a tapir from an aardvark?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card mb-3" style="max-width: 540px;">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://cdn.britannica.com/68/237068-131-8D3EB18E/Name-that-Thing-Nature-composite-image.jpg?w=100&h=75&c=crop" class="img-fluid rounded-start" alt="no img">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Name That Thing: Nature</h5>
+                                                    <p class="card-text">Get acquainted with the great outdoors</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </span>
+                    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -85,92 +655,47 @@
 
 
     <section>
-        <footer class="container-fluid">
-            <div class="foot">
-                <div class="footimg">
-                    <img src="img/footerlogo.jpeg" alt="bugatti" width="200px">
-                    <img src="img/footerlogo2.jpeg" alt="bugatti" width="200px">
-                    <img src="img/footerlogo3.jpeg" alt="bugatti" width="200px">
+        <footer>
+
+            <div class="main-footer">
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <h4>STAY CONNECTED</h4>
+                        </li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-x-twitter"></i></li>
+                    </ul>
                 </div>
-
-                <div class="footer">
-                    <div class="main-footer">
-
-
-                        <div class="mfooter1">
-                            <b>COLLECTION</b>
-                            <br>
-                            <small><a href="#">CHESS</a></small> <br>
-                            <small><a href="#">CHECKERS</a></small> <br>
-                            <small><a href="#">MONOPOLY</a></small> <br>
-                            <small><a href="#">WORD PRESS</a></small> <br>
-                            <small><a href="#">PICTOINARY</a></small> <br>
-                            <small><a href="#">CARROM</a></small> <br>
-                            <small><a href="#">SCRAMBBLE</a></small> <br>
-                        </div>
-                        <div class="mfooter2">
-                            <b>CUSTOMER SERVICE</b>
-                            <br>
-                            <small><a href="#">SERVICE & CONTACT</a></small> <br>
-                            <small><a href="#">MAINTANENCE</a></small> <br>
-                            <small><a href="#">WARRENTY</a></small> <br>
-                            <small><a href="#">PLAY ACCESSORIES</a></small> <br>
-                        </div>
-                        <div class="mfooter3">
-                            <b>CONTACT US</b>
-                            <br>
-                            <small><a href="#">customercare@Bplay.co.in</a></small> <br>
-                            <small><a href="#">000-1234-555</a></small> <br>
-                            <small><a href="#">HELP & SERVICES</a></small> <br>
-                            <small><a href="#">FAQs</a></small> <br>
-                        </div>
-                        <div class="mfooter4">
-                            <b>LIESTYLE</b>
-                            <br>
-                            <small><a href="#">COLLECTIBLES</a></small> <br>
-                            <small><a href="#">ART</a></small> <br>
-                            <small><a href="#">STORES</a></small> <br>
-                        </div>
-                    </div>
-
-                    <div id="lower-footer">
-                        <!-- <span><b>Download Watch World App</b></span>
-                        <br><br>
-                        <a href="https://www.apple.com/in/app-store/" target="_blank" rel="noopener noreferrer"><img
-                                src="img/appstore.png" alt="appstore" width="125px"></a>
-                        <a href="https://play.google.com/store/games?hl=en" target="_blank"
-                            rel="noopener noreferrer"><img src="img/playstore.png" alt="playstore" width="140px"></a> -->
-
-                        <br><br>
-                        <span><b>Follow Us With</b></span>
-                        <br>
-                        <span>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </span>
-
-                        <br>
-                        <span>
-                            <h6>Want Help? <u>CLICK HERE</u> to<br> Contact us on <i class="fa-brands fa-whatsapp"></i>
-                            </h6>
-                        </span>
-
-                        <br>
-                        <span>
-                            <h6>Operating Hours: 10AM to 10PM <br>Monday to Sunday</h6>
-                        </span>
-                    </div>
-                </div>
-
                 <hr>
-                <div id="lowest-footer">
-                    <small class="lowestfoottxt1">© 2024 Play Company Limited. All Rights Reserved</small>
-                    <br>
-                    <small>Terms & Conditions | Privacy Policy | Wearable Privacy Policy</small>
+                <div class="legal-info">
+                    <ul class="">
+                        <li>
+                            <p>About Us & Legal Info</p>
+                        </li>
+                        <li>
+                            <p>Contact Us</p>
+                        </li>
+                        <li>
+                            <p>Privacy Policy</p>
+                        </li>
+                        <li>
+                            <p>Terms of Use</p>
+                        </li>
+                        <li>
+                            <p>Equal Opportunity</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>©2025 Encyclopædia Britannica, Inc.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
+
         </footer>
     </section>
 
@@ -179,7 +704,17 @@
 
 
 
-
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('#sidebar');
+            // Toggle visibility
+            if (sidebar.style.display === 'flex') {
+                sidebar.style.display = 'none';
+            } else {
+                sidebar.style.display = 'flex';
+            }
+        }
+    </script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

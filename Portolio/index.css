@@ -14,7 +14,7 @@ body {
     background-attachment: fixed;
 }
 
-section {
+section h3 p {
     padding: 0;
     margin: 0;
 }
@@ -154,9 +154,10 @@ nav li:first-child {
     color: black;
     border-radius: 10px;
     border: none;
-
+    transition: background-color 0.7s ease, 
+    box-shadow 0.5s ease;
+    
     &:hover {
-        transition: background-color 0.5s ease, box-shadow 1.5s ease;
         background-color: aqua;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 
@@ -213,12 +214,14 @@ nav li:first-child {
 .photographs {
     margin-left: 100px;
 }
+
 .photoinner {
     width: 100%;
     gap: 25px;
     height: 300px;
 
 }
+
 .projinfo {
     margin-left: 150px;
     color: black;
@@ -239,6 +242,7 @@ nav li:first-child {
     color: black;
     margin-left: 450px;
 }
+
 /* .skillinfotxtcolor {
     color: black;
 } */
@@ -275,6 +279,27 @@ nav li:first-child {
     text-align: center;
     color: white;
 }
+
+
+
+.workedFor-info {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 400px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100vh;
+    gap: 100px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.workedFor-info ul {
+    margin-bottom: -10px;
+    padding: -20px;
+}
+
 
 
 

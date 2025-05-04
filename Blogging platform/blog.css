@@ -46,6 +46,7 @@ main {
 a:any-link {
     text-decoration: none;
     background-color: transparent;
+    list-style-type: none;
 }
 
 a {
@@ -77,7 +78,7 @@ nav {
 }
 
 nav ul {
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     list-style: none;
 }
@@ -105,6 +106,18 @@ nav :first-child {
 }
 
 
+
+
+
+/* -----------------------------------------------------------------------------------------------------------create article page NAVBAR ----------------------------------------------------------------------------------------------------------------- */
+
+
+
+.navSec {
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+
+}
+
 nav .navul {
     width: 100%;
     list-style-type: none;
@@ -121,6 +134,7 @@ nav .navli {
     align-items: center;
 
     list-style: none;
+
 }
 
 nav .nava {
@@ -130,12 +144,17 @@ nav .nava {
     text-decoration: none;
     display: flex;
     align-items: center;
+    transition: all ease 0.5s;
 
 
     &:hover {
         text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-        color:black;
+        color: black;
     }
+}
+
+nav .nava .fa-solid {
+    margin-right: 5px;
 }
 
 nav navli:first-child {
@@ -144,16 +163,16 @@ nav navli:first-child {
 
 #sidebar {
     position: fixed;
-    top: 0;
+    top: 5%;
     left: 0;
     height: 100vh;
     width: 280px;
     z-index: 1;
-    background-color: white;
+    background-color: orange;
     /* background-color: rgba(225, 225, 225, 0.2); */
     /* backdrop-filter: blur(10px); */
-    /* box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1); */
-    display: none;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -161,6 +180,26 @@ nav navli:first-child {
     margin-left: auto;
     border-radius: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -259,7 +298,7 @@ main {
     position: relative; */
     /* gap: 0; */
     display: block;
-    width: 100vw; 
+    width: 100vw;
     height: 600px;
     object-fit: cover;
     margin: 0;
@@ -338,7 +377,7 @@ main {
 /* ----------------------------------------------------------------------------login form - login page-------------------------------------------------------------------------------------------- */
 
 #login-form {
-    background-color: orange;
+    background-color: #E06666;
     color: black;
     margin: 50px;
     margin-top: 200px;
@@ -347,12 +386,30 @@ main {
     width: 500px;
 }
 
-#login-form, button {
+#login-form button {
     background-color: #E06666;
     color: white;
     padding: 10px;
     border: 1px solid black;
     border-radius: 10px;
+}
+
+fieldset {
+    display: block;
+    min-inline-size: min-content;
+    margin-inline: 2px;
+    border-width: 2px;
+    border-style: groove;
+    padding-block: 0.35em 0.625em;
+    padding-inline: 0.75em;
+}
+
+
+fieldset, legend {
+    display: block;
+    visibility:visible;
+    font-size: 16px;
+    color: black;
 }
 
 
@@ -378,6 +435,34 @@ main {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------------------------------------------------------------------------------------------Read Article page------------------------------------------------------------------------------------------------------------------------------ */
 
 
@@ -387,9 +472,9 @@ main {
 .createArticle-main {
     background-color: white;
     color: black;
-    /* align-self: center; */
     overflow-x: hidden;
 }
+
 .col {
     display: flex;
     margin-left: 300px;
@@ -397,7 +482,6 @@ main {
 
 
 .main-article {
-    /* background-color: #E06666; */
     padding: 10px;
     width: 800px;
 }
@@ -405,16 +489,37 @@ main {
 .articleCard1 img {
     width: 200px;
 }
+
 .articleCard1 ul article {
     display: flex;
     gap: 40px;
 }
 
+.articleCard1 ul article h3 a {
+    transition: all 0.5s;
+    color: black;
+
+    &:hover {
+        color: #E06666;
+    }
+}
+
+.articleCard1 ul article p a {
+    transition: all 0.5s;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+
+    &:hover {
+        color: #E06666;
+    }
+}
+
 
 
 .vertical-line {
-    width: 1px;          /* thin line */
-    height: 1000hv;       /* adjust as needed */
+    width: 1px;
+    height: 1000hv;
     background-color: black;
     border: none;
     margin: 0px 30px 0px 30px;
@@ -434,10 +539,86 @@ main {
 
 
 
+/* --------------------------------------------------------------------------------------------------Article------------------------------------------------------------------------------------------------------------------ */
+
+
+.carousel-inner img {
+    height: 500px;
+}
+
+
+
+.of-Article {
+    margin-left: -150px;
+}
+
+
+.left-side-info li a {
+    color: black;
+}
+
+.left-side-info li button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #E06666;
+    color: white;
+    transition: 0.5s;
+    size: 10px;
+
+    &:hover {
+        color: black;
+        background-color: #EDB6A3;
+    }
+}
+
+
+.font-of-mainArticle li p {
+    font-family: sans-serif;
+}
+
+
+.iframe2-inarticle-main {
+    display: flex;
+    gap: 10px;
+}
+
+.question-inarticle-main {
+    padding: 20px;
+    background-color: #E06666;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --------------------------------------------------------------------------------------------------------------Footer----------------------------------------------------------------------------------------------------------------------------------- */
 
 footer {
-    background-color:#E06666;
+    background-color: #E06666;
 }
 
 .main-footer {
@@ -446,7 +627,7 @@ footer {
     padding: 30px;
     gap: 50px;
 
-} 
+}
 
 #lowest-footer {
     /* margin-left: 400px; */
@@ -468,8 +649,8 @@ footer {
     color: white;
     margin-left: 100px;
 }
+
 #language {
     background-color: #E06666;
     color: white;
 }
-

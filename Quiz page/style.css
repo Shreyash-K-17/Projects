@@ -6,12 +6,12 @@
 
 body {
     min-height: 100vh;
-    background-color: black;
-    background-image:url(img/itachibgimg.jpeg);
+    background-color: #92DCE5;
+    /* background-image: url(img/itachibgimg.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 
@@ -21,52 +21,163 @@ section {
 }
 
 
-nav {
-    background-color: black;
-    color: aqua;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    margin: 0;
-    padding: 0;
-    z-index: 1;
+a:any-link {
+    text-decoration: none;
+    background-color: transparent;
+    color: gray;
 }
 
-nav ul {
+ul li {
+    list-style-type: none;
+}
+
+
+
+
+
+/* -------------------------------------------------------Header--------------------------------------------------------- */
+
+header {
+    background-color: black;
+    height: 50px;
+    padding: 5px;
+}
+
+.main-header ul {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+#openSidebarBtnLi {
+    margin-top: 10px;
+}
+
+#openSidebarBtn {
+    margin-left: 300px;
+}
+
+.headerLogoImg {
+    height: 30px;
+    margin-top: 5px;
+}
+
+search input {
+    margin-top: 5px;
+    padding: 5px 3px 5px 3px;
+    border: 10px;
+    border-radius: 10px;
+    margin-left: 300px;
+    height: fit-content;
+    position: relative;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    left: 1075px;
+    top: 2.8%;
+    transform: translateY(-30%);
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+.main-header button {
+    margin-left: 300px;
+    background-color: red;
+    color: black;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin-top: 10px;
+    padding: 0px 5px 0px 5px;
+}
+
+.header-signin {
+    margin-top: 10px;
+    color: white;
+}
+
+.header-signin a {
+    color: white;
+}
+
+
+
+/* ---------------------------------------------------------------------------------lower-header (navbar)------------------------------------------------------------------------------------------------------- */
+
+.lower-navbar ul {
+    display: flex;
+    color: white;
+    background-color: black;
+    gap: 20px;
+    padding-left: 400px;
+}
+
+.lower-navbar ul li a {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------------------Navbar----------------------------------------------------------------------------------------------------- */
+
+
+
+
+.navSec {
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+nav .navul {
     width: 100%;
     list-style-type: none;
     text-decoration: none;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    text-align: center;
+
 }
 
-nav li {
+nav .navli {
     height: 80px;
     align-items: center;
+
+    list-style: none;
+
 }
 
-nav a {
+nav .nava {
     height: 100%;
     padding: 0 30px;
     padding-top: 20px;
     text-decoration: none;
     display: flex;
-    text-decoration: none;
-    display: flex;
     align-items: center;
-    color: aqua;
+    transition: all ease 0.5s;
+
 
     &:hover {
-        background-color: aqua;
-        color: black;
-
-        &::after#closeSidebarBtn {
-            background-color: none;
-        }
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        color: white;
     }
 }
 
-nav li:first-child {
-    margin-right: auto;
+nav .nava .fa-solid {
+    margin-right: 5px;
+}
+
+nav navli:first-child {
+    margin-left: auto;
 }
 
 #sidebar {
@@ -76,32 +187,154 @@ nav li:first-child {
     height: 100vh;
     width: 280px;
     z-index: 1;
-    background-color: rgba(225, 225, 225, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    /* background-color: rgba(225, 225, 225, 0.2); */
+    /* backdrop-filter: blur(10px); */
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-left: -50px;
+    margin: auto;
+    margin-left: auto;
+    border-radius: 5px;
 }
 
-#sidebar li {
-    width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------main--------------------------------------------------------------------------------------------------------------------------- */
+
+
+.maincontent-row1 {
+    margin-left: 300px;
 }
 
-#sidebar a {
-    width: 100%;
-    color: black;
+.maincontent-row1 ul {
+    display: flex;
+    gap: 30px;
+}
+
+
+.maincontent-row1 .card {
+    transition: 0.5s ease;
+    border-radius: 20px;
+    text-align: center;
 
     &:hover {
-        color: black;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
     }
 }
 
-#closeSidebarBtn {
-    color: aqua;
+.maincontent-row1 .card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
+
+
+
+
+
+.maincontent-row2 {
+    margin-left: 300px;
+}
+
+.maincontent-row2 ul {
+    display: flex;
+    gap: 30px;
+}
+
+
+.maincontent-row2 .card {
+    transition: 0.5s ease;
+    border-radius: 20px;
+    text-align: center;
+
+    &:hover {
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
+    }
+}
+
+.maincontent-row2 .card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+
+
+.sideCategory-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sideCategory-container .card {
+    max-height: 77px;
+    /* object-fit: cover; */
+    overflow: hidden;
+} 
+
+/* .scienceCategory-row1 .card .card-body .card-title .card-text {
+    object-fit: contain;
+    line-height: 5px;
+    color: #92DCE5;
+    top: -100px;
+} */
+
+.scienceCategory-row1 .card .card-body .card-title,
+.scienceCategory-row1 .card .card-body .card-text {
+    line-height: 1.2;
+    color: black;
+    font-size: 0.85rem;
+    margin: 0;
+    margin-left: -25px;
+}
+
+.scienceCategory-row1-img {
+    object-fit: cover;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -141,64 +374,29 @@ nav li:first-child {
 
 footer {
     background-color: black;
-    justify-content: space-between;
-    flex-wrap: wrap;
     color: white;
+    bottom: 0;
+    margin-bottom: -1rem;
 }
-/* 
-.foot {
-    
-} */
 
-.footer {
+.social-icons ul {
     display: flex;
-    padding-bottom: 30px;
-}
-
-a:any-link {
-    text-decoration: none;
-    background-color: transparent;
-    color: white;
-}
-
-.footimg {
-    margin-left: 370px;
-    display: block;
-    line-height: 50px;
-    padding-top: 50px;
-    align-items: center;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: larger;
 }
 
 
-.main-footer {
+.legal-info ul {
+    gap: 30px;
     display: flex;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
 }
 
-.mfooter1 {
-    padding-left: 190px;
-    line-height: 30px;
-}
-
-.mfooter2 {
-    padding-left: 80px;
-    line-height: 30px;
-}
-
-.mfooter3 {
-    padding-left: 70px;
-    line-height: 30px;
-}
-
-.mfooter4 {
-    padding-left: 40px;
-    line-height: 30px;
-}
-
-#lower-footer {
-    margin-top: 5px;
-    margin-left: 60px;
-    line-height: 30px;
+.legal-info ul li {
+    background-color: black;
 }
