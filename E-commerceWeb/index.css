@@ -1,0 +1,1009 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#bodybgimg {
+    min-height: 100vh;
+    background-color: antiquewhite;
+    background-image: url(img/Bugatti_bgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#loginpagebodybgimg {
+    min-height: 100vh;
+    background-color: antiquewhite;
+    background-image: url(img/Bugatti_Carausalimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#ProductPagebgimg {
+    min-height: 100vh;
+    background-color: black;
+    /* background-image: url(img/Bugatti_Carausalimg.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+section {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li,
+ol {
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------NAVBAR------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+nav {
+    background-color: black;
+    color: white;
+    background: transparent;
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); */
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    top: 0;
+    justify-content: center;
+}
+
+nav ul {
+    /* width: 100%; */
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    margin: 10px 0px 0px 280px;
+    align-items: center;
+}
+
+nav li {
+    height: 20px;
+    align-items: center;
+}
+
+nav a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100%;
+    padding: 0 30px;
+    padding-top: 20px;
+    margin: 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    &:hover {
+        color: azure;
+    }
+}
+
+nav ul li img {
+    height: 40px;
+    margin: 0px 90px 0px 90px;
+}
+
+nav li pre {
+    margin: 10px 0px 0px 20px;
+    display: flex;
+
+    &:first-child {
+        opacity: 0.5;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------------------------Main-------------------------------------------------------------------------------------------------- */
+
+
+.aboutInfo-cardtxt {
+    justify-content: center;
+
+}
+
+.aboutInfo-cardtxt span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-style: bold;
+    letter-spacing: 1px;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutInfo-cardtxt .aboutInfo-cards {
+    gap: 30px;
+}
+
+.aboutInfo-cards {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.aboutInfo-cards .card {
+    position: relative;
+    border-radius: 0 !important;
+    overflow: hidden;
+}
+
+.aboutInfo-cards .card img {
+    filter: blur(2px) brightness(80%);
+    opacity: 0.9;
+    transition: transform 0.3s ease;
+    display: block;
+    object-fit: cover;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(1.05);
+        transform: scale(1.05);
+        filter: brightness(80%);
+    }
+}
+
+.cardInfo1 {
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    margin: 45px 0px 0px 30px;
+    pointer-events: none;
+}
+
+.cardInfo1 button {
+    margin: 350px 0px 0px 0px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 70px 10px 75px;
+    z-index: 1;
+
+}
+
+
+.cardInfo2 {
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    margin: 45px 0px 0px 0px;
+    pointer-events: none;
+}
+
+.cardInfo2 button {
+    margin: 350px 0px 0px 0px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 50px 10px 45px;
+    z-index: 1;
+}
+
+
+.cardInfo3 {
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    margin: 45px 0px 0px 20px;
+    border: none;
+    pointer-events: none;
+}
+
+.cardInfo3 button {
+    margin: 380px 0px 0px 0px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 50px 10px 45px;
+    z-index: 1;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+.mainCars-cardContainer {
+    justify-content: center;
+}
+
+.mainCars-cardContainer span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-style: bold;
+    letter-spacing: 1px;
+    align-items: center;
+    text-align: center;
+}
+
+.mainCars-cardContainer .carCards-container {
+    gap: 30px;
+}
+
+.carCards-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    border: none;
+}
+
+.carCards-container .carCard {
+    position: relative;
+    border-radius: 0 !important;
+    overflow: hidden;
+}
+
+.carCards-container .carCard img {
+    filter: blur(2px) brightness(80%);
+    opacity: 0.9;
+    transition: transform 0.3s ease;
+    display: block;
+    object-fit: cover;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(1.05);
+        transform: scale(1.05);
+        filter: brightness(80%);
+    }
+}
+
+
+.carCard1 {
+    margin: 0;
+    padding: 0;
+}
+
+.carCardinfo li h3 {
+    font-family: Meie Script;
+    font-style: italic;
+}
+
+.carCardinfo1 {
+    text-align: center;
+    top: 0;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    margin: 45px 0px 0px 43px;
+    z-index: 1;
+    border: none;
+    pointer-events: none;
+}
+
+
+.carCardinfo1 button {
+    margin: 390px 0px 0px 0px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 120px 10px 120px;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+.carCardinfo2 {
+    text-align: center;
+    top: 0;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    margin: 45px 0px 0px 43px;
+    z-index: 1;
+    border: none;
+    pointer-events: none;
+}
+
+.carCardinfo2 button {
+    margin: 390px 0px 0px 0px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 120px 10px 120px;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+.carCardinfo3 {
+    text-align: center;
+    top: 0;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    margin: 45px 0px 0px 43px;
+    z-index: 1;
+    border: none;
+    pointer-events: none;
+}
+
+.carCardinfo3 button {
+    margin: 390px 0px 0px 0px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 120px 10px 120px;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+.carCardinfo4 {
+    text-align: center;
+    top: 0;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    margin: 45px 0px 0px 43px;
+    z-index: 1;
+    border: none;
+    pointer-events: none;
+}
+
+.carCardinfo4 button {
+    margin: 390px 0px 0px 0px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 120px 10px 120px;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+.surMeasure {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.surMeasure span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-style: bold;
+    letter-spacing: 1px;
+    align-items: center;
+    text-align: center;
+}
+
+.surMeasure .sur-content {
+    display: inline-flex;
+    margin-left: 100px;
+    align-items: left;
+    background-color: black;
+    width: 100%;
+    max-width: 1700px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    gap: 30px;
+
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(1.05);
+        transform: scale(1.05);
+        filter: brightness(100%);
+    }
+}
+
+.surMeasure .sur-content img {
+    width: 750px;
+    left: 0px;
+    height: auto;
+    align-self: left;
+    margin: 0;
+
+    /* filter: blur(1px) brightness(100%);
+    opacity: 1.9;
+    transition: transform 0.3s ease;
+    display: block;
+    object-fit: cover;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(1.05);
+        transform: scale(1.05);
+        filter: brightness(100%);
+    } */
+}
+
+.sur-content ul {
+    margin-left: 90px;
+    gap: 10px;
+}
+
+.sur-content ul button {
+    padding: 10px 70px 10px 70px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------CHIRON page------------------------------------------------------------------------------------------------------------- */
+
+.chironPage-nav {
+    z-index: 3;
+    position: absolute;
+}
+
+
+.topIntro-imgTxt {
+    justify-content: center;
+    text-align: center;
+}
+
+.topIntro-imgTxt img {
+    top: -80px;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(1.05);
+        transform: scale(1.05);
+        filter: brightness(100%);
+    }
+}
+
+.topIntro-txt {
+    top: 440px;
+    text-align: center;
+    position: absolute;
+    z-index: 4;
+    color: white;
+    padding: 20px;
+    margin-left: 620px;
+    pointer-events: none;
+
+}
+
+
+
+.mainChironDescription {
+    justify-content: center;
+}
+
+.mainCHdes-imgTxt {
+    overflow: hidden;
+    justify-content: center;
+    text-align: left;
+}
+
+.mainCHdes-imgTxt img {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(1.05);
+        transform: scale(1.05);
+        filter: brightness(100%);
+    }
+}
+
+.CHdes-txt1 {
+    transform: translateY(-440%);
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    pointer-events: none;
+}
+
+.CHdes-txt1-2 {
+    transform: translateY(-270%);
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    margin-left: 400px;
+    pointer-events: none;
+}
+
+
+.mainCHdes-imgTxt2 img {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(1.05);
+        transform: scale(1.05);
+        filter: brightness(100%);
+    }
+}
+
+.CHdes-txt2 {
+    transform: translateY(-460%);
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    pointer-events: none;
+}
+
+
+.mainCHdes-imgTxt3 img {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(1.05);
+        transform: scale(1.05);
+        filter: brightness(100%);
+    }
+}
+
+.CHdes-txt3 {
+    transform: translateY(-370%);
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    pointer-events: none;
+}
+
+.CHdes-txt3-2 {
+    transform: translateY(-270%);
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    margin-left: 1350px;
+    pointer-events: none;
+}
+
+
+.mainCHdes-imgTxt4 img {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(1.05);
+        transform: scale(1.05);
+        filter: brightness(100%);
+    }
+}
+
+.CHdes-txt4 {
+    transform: translateY(-600%);
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    margin-left: 150px;
+    pointer-events: none;
+}
+
+.CHdes-txt4-2 {
+    transform: translateY(-600%);
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    margin-left: 1300px;
+    pointer-events: none;
+}
+
+.CHdes-txt4-3 {
+    transform: translateY(-270%);
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    margin-left: 230px;
+    pointer-events: none;
+}
+
+
+.mainCHdes-imgTxt5 img {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(1.05);
+        transform: scale(1.05);
+        filter: brightness(100%);
+    }
+}
+
+.CHdes-txt5 {
+    transform: translateY(-200%);
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    margin-left: 1000px;
+    pointer-events: none;
+}
+
+.CHdes-txt5-2 {
+    transform: translateY(-300%);
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    margin-left: 100px;
+    pointer-events: none;
+}
+
+
+.mainCHdes-imgTxt6 img {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(1.05);
+        transform: scale(1.05);
+        filter: brightness(100%);
+    }
+}
+
+.CHdes-txt6 {
+    transform: translateY(-620%);
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    margin-left: 1200px;
+    pointer-events: none;
+}
+
+.CHdes-txt6-2 {
+    transform: translateY(-300%);
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    margin-left: 100px;
+    pointer-events: none;
+}
+
+
+.mainCHdes-imgTxt7 img {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    z-index: 0;
+
+    &:hover {
+        transform: scale(1.05);
+        transform: scale(1.05);
+        filter: brightness(100%);
+    }
+}
+
+.CHdes-txt7 {
+    transform: translateY(-100%);
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    margin-left: 150px;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------CARD--------------------------------------------------------------------- */
+
+
+
+
+
+
+/* -------------------------------------------------------------loginpage------------------------------------------------------------------- */
+
+#loginpageform {
+    width: 500px;
+    background-color: antiquewhite;
+    align-items: center;
+    margin-left: 200px;
+    margin-bottom: 300px;
+    margin-top: 100px;
+    padding: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------FOOTER---------------------------------------------------------------------- */
+
+
+footer {
+    background-color: black;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.foot {
+    color: white;
+    background-color: black;
+    margin-left: 200px;
+}
+
+.footer {
+    display: flex;
+    padding-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: bold;
+}
+
+
+a:any-link {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+
+.footimg {
+    display: block;
+    line-height: 30px;
+}
+
+.main-footer {
+    display: flex;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+
+.mfooter1 {
+    padding-left: 50px;
+    line-height: 30px;
+}
+
+.mfooter2 {
+    padding-left: 80px;
+    line-height: 30px;
+}
+
+.mfooter3 {
+    padding-left: 70px;
+    line-height: 30px;
+}
+
+.mfooter4 {
+    padding-left: 60px;
+    line-height: 30px;
+}
+
+
+#right-footer {
+    margin-top: 5px;
+    margin-left: 90px;
+    line-height: 30px;
+}
+
+
+#lowest-footer {
+    margin-left: 500px;
+    padding-bottom: 20px;
+}
+
+.lowestfoottxt1 {
+    margin-left: 20px;
+}

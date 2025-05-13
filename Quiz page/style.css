@@ -4,14 +4,24 @@
     box-sizing: border-box;
 }
 
+.quizPages-bg {
+    min-height: 100vh;
+    background-color: black;
+    background-image: url(img/bgimg.png);
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    background-attachment: fixed;
+}
+
 body {
     min-height: 100vh;
-    background-color: #92DCE5;
-    /* background-image: url(img/itachibgimg.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; */
+    background-color: wheat;
+    /* background-image: url(img/bgimg.png); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-attachment: fixed; */
 }
 
 
@@ -24,7 +34,7 @@ section {
 a:any-link {
     text-decoration: none;
     background-color: transparent;
-    color: gray;
+    color: black;
 }
 
 ul li {
@@ -219,6 +229,11 @@ nav navli:first-child {
     margin-left: 300px;
 }
 
+.maincontent-row1 h3 {
+    color: white;
+
+}
+
 .maincontent-row1 ul {
     display: flex;
     gap: 30px;
@@ -247,6 +262,11 @@ nav navli:first-child {
 
 .maincontent-row2 {
     margin-left: 300px;
+}
+
+.maincontent-row2 h3 {
+    color: white;
+
 }
 
 .maincontent-row2 ul {
@@ -283,7 +303,7 @@ nav navli:first-child {
     max-height: 77px;
     /* object-fit: cover; */
     overflow: hidden;
-} 
+}
 
 /* .scienceCategory-row1 .card .card-body .card-title .card-text {
     object-fit: contain;
@@ -292,8 +312,8 @@ nav navli:first-child {
     top: -100px;
 } */
 
-.scienceCategory-row1 .card .card-body .card-title,
-.scienceCategory-row1 .card .card-body .card-text {
+.sideCategory-row .card .card-body .card-title,
+.sideCategory-row .card .card-body .card-text {
     line-height: 1.2;
     color: black;
     font-size: 0.85rem;
@@ -301,9 +321,27 @@ nav navli:first-child {
     margin-left: -25px;
 }
 
+.sideCategory-row .card {
+    transition: ease 0.5s;
+
+    &:hover {
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.mainContent-sideCategory .mainContent-sideCategroy-txt1 h3 {
+    color: white;
+    margin-left: 250px;
+}
+
+.mainContent-sideCategory h3 {
+    color: white;
+}
+
 .scienceCategory-row1-img {
     object-fit: cover;
     height: 50px;
+    width: 100%;
 }
 
 
@@ -319,25 +357,64 @@ nav navli:first-child {
 
 
 
+/* -----------------------------------------------------------------------------------------guess country page---------------------------------------------------------------------------------------------------------------------- */
 
 
 
 
 
 
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    color: black;
+    margin-top: 10px;
+}
+
+
+.guessCountry-card {
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: black;
+    padding: 1rem;
+    margin: 30px 10px 50px 450px;
+}
+
+.guessCountry-card .btn-light {
+    color: white;
+
+    &:hover {
+        color: black;
+    }
+}
 
 
 
 
 
+/* --------------------------------------------------------------------------------------------Periodic Table-------------------------------------------------------------------------------------------------------------------------- */
 
 
 
+.periodicTable-card {
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    margin: 30px 10px 50px 700px;
+    border-radius: 10px;
+}
 
+.periodicTable-card .btn-light {
+    color: white;
 
-
-
-
+    &:hover {
+        color: black;
+    }
+}
 
 
 

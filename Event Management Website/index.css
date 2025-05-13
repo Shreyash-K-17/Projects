@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#indexPage-bodyId, #loginPage-bodyId {
+    /* min-height: 100vh; */
+    background-color: wheat;
+    background-image: url(img/homepagebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+
+a:any-link {
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-indexPageBtn {
+    margin: 550px 100px 0px 950px;
+}
+
+
+
+.main-indexPageBtn a  {
+    background-color: antiquewhite;
+    padding: 20px 30px 20px 30px;
+    border: 5px solid black;
+    border-radius: 10px; 
+    transition: ease 0.5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    &:hover {
+        background-color: black;
+        color: wheat;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------Login----------------------------------------------------------------------------------------- */
+
+
+
+.loginMain {
+    margin: 400px 100px 100px 600px;
+    box-shadow: 15px 10px 15px 15px rgba(0, 0, 0, 0.4);
+}

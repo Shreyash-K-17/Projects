@@ -107,6 +107,10 @@ nav li:first-child {
 
 
 
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
 
 
 
